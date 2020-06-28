@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.9em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.7em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+#about a {
+	text-decoration: none;
+  margin-left: 5px; 
+}
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {color: #fff}
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+#top {
+  width: 100%;
+  background-image: url(../img/forpc.jpg);
+  background-blend-mode: overlay;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  border-bottom: 3px solid grey;
+}
+
+@media (min-width: 1001px) {
+  #top {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+  #top {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  #top {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  #top {
+    font-size: 0.9em;
+  }
+}
+
+#top h1 {
+  padding-top: 17%;
+  font-family: 'Dancing Script', cursive;
+}
+
+#top h3 {
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+}
+
+#image{
+  margin: 0;
+  padding: 0;
+}
+.img, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24 {
+  display: inline-block;
+  max-width: 25%;
+  margin: 0;
+  flex-wrap: wrap;
+  float: left;
+  position: relative;
+}
+
+.img img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img, .img7 img, .img8 img, .img9 img, .img10 img, .img11 img, .img12 img, .img13 img, .img14 img, .img15 img, .img16 img, .img17 img, .img18 img, .img19 img, .img20 img, .img21 img, .img22 img, .img23 img, .img24 img {
+  float: left;
+  max-width: 100%;
+}
+.descr{
+  display: none;
+  text-align: center;
+  -webkit-transiton: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .5);
+  position: absolute;
+  color: white;
+}
+
+.img:hover .descr {
+  display: block;
+}
+.img2:hover .descr {
+  display: block;
+}
+.img3:hover .descr {
+  display: block;
+}
+.img4:hover .descr {
+  display: block;
+}
+.img5:hover .descr {
+  display: block;
+}
+.img6:hover .descr {
+  display: block;
+}
+.img7:hover .descr {
+  display: block;
+}
+.img8:hover .descr {
+  display: block;
+}
+.img9:hover .descr {
+  display: block;
+}
+.img10:hover .descr {
+  display: block;
+}
+.img11:hover .descr {
+  display: block;
+}
+.img12:hover .descr {
+  display: block;
+}
+.img13:hover .descr {
+  display: block;
+}
+.img14:hover .descr {
+  display: block;
+}
+.img15:hover .descr {
+  display: block;
+}
+.img16:hover .descr {
+  display: block;
+}
+.img17:hover .descr {
+  display: block;
+}
+.img18:hover .descr {
+  display: block;
+}
+.img19:hover .descr {
+  display: block;
+}
+.img20:hover .descr {
+  display: block;
+}
+.img21:hover .descr {
+  display: block;
+}
+.img22:hover .descr {
+  display: block;
+}
+.img23:hover .descr {
+  display: block;
+}
+.img24:hover .descr {
+  display: block;
+}
+span a{
+  color:white;
+  text-decoration: none;
+}
+span h5{
+ padding-top: 25%;
+}
+
+#contacts {
+  width: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+#contacts p {
+  margin-top: 25px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.3em;
+  underline: none;
+  color: #000;  
+}
+
+#contacts a{
+  text-decoration: none;
+}
+
+
+#contacts h5 {
+  font-size: 2.5em; 
+  margin-top: 15px;
+  color: #a0a0a0
+}
+
+.vk, .mail {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 50px;
+}
+.vk img, .mail img{
+  max-width: 50px;
+  -webkit-transiton: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.vk img:hover, .mail img:hover{
+  transform: scale(1.3);
+}
+.vk {
+  margin-right: 10px;
+}
+
+#contacts span{
+  font-family: 'Roboto Slab', serif;
+  color:#a0a0a0;
+}

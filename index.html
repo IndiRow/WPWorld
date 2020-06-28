@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WP World</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <header>
+    
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>WP</span>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1><strong>WallPaper</strong></h1>
+    <h3><strong>World</strong></h3>
+  </div>
+
+<!--Описание сайта-->
+
+  <div id="main">
+    
+    <div class="intro">
+      <h2>The coolest</h2>
+      <span>wallpapers for your devices</span>
+    </div>
+    
+    <div class="text">
+      <span>
+        <ul>
+          <li onclick="slowScroll('#pcwp')">For PC</li><!--1920x1080-->
+          <li onclick="slowScroll('#lpwp')">For Laptops</li><!--1920x1080-->
+          <li onclick="slowScroll('#phwp')">For Phone</li><!--1280x720-->
+        </ul>
+      </span>
+    </div>
+  
+  </div>
+
+<!--Блок с обоями на ПК-->
+  
+  <div id="pcwp">
+    <h2>For PC</h2>
+    <h4><a href="html/pcwp.html">VIEW MORE</a></h4>
+    
+    
+    <div class="img">
+      <img src="img/forpcimg.jpg" alt="Image">
+      
+    </div>
+    <div class="img">
+      <img src="img/forpcimg2.jpg" alt="Image">
+      
+    </div>
+    <div class="img">
+      <img src="img/forpcimg3.jpg" alt="Image">
+      
+    </div>
+      <div class="img"><img src="img/forpcimg4.jpg" alt="Image">
+    </div>
+
+  </div>
+
+  <div id="ryba">
+    <div class="ryba">
+      <img src="img/rybauzor1.png" alt="ryba">
+    </div>
+  </div>
+  
+  <div id="lpwp">
+    <h2>For Laptop</h2>
+    <h4><a href="html/lpwp.html">VIEW MORE</a></h4>
+    
+    
+    <div class="img">
+      <img src="img/forlpimg.jpg" alt="Image">
+      
+    </div>
+    <div class="img">
+      <img src="img/forlpimg2.jpg" alt="Image">
+      
+    </div>
+    <div class="img">
+      <img src="img/forlpimg3.jpg" alt="Image">
+      
+    </div>
+      <div class="img"><img src="img/forlpimg4.jpg" alt="Image"></div>
+      
+  </div>
+
+<div id="ryba">
+    <div class="ryba">
+      <img src="img/rybauzor2.png" alt="ryba">
+    </div>
+  </div>
+
+<div id="phwp">
+    <h2>For Phone</h2>
+    <h4><a href="html/phwp.html">VIEW MORE</a></h4>
+    
+    
+    <div class="img">
+      <img src="img/forphoneimg.jpg" alt="Image">
+      
+    </div>
+    <div class="img">
+      <img src="img/forphoneimg2.jpg" alt="Image">
+      
+    </div>
+    <div class="img">
+      <img src="img/forphoneimg3.jpg" alt="Image">
+      
+    </div>
+      <div class="img"><img src="img/forphoneimg4.jpg" alt="Image"></div>
+      
+  </div>
+<hr>
+  <div id="contacts">
+    <h5>Contacts</h5>
+    <div class="vk">
+      <a href="https://vk.com/ravenrow"><img src="img/vklogo.png" alt="Image"></a>
+    </div>
+    <div class="mail">
+      <a href="mailto:ilshatn2000@gmail.com"><img src="img/maillogo.png" alt="Image"></a>
+    </div><br><hr>
+    <span>Created by <strong>RavenRow</strong><br>All rights reserved<br>Copyright 2020&copy;</span>
+  </div>
+  
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
